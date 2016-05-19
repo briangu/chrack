@@ -54,8 +54,19 @@ function startWatching(filename) {
 			stream.addListener("data", function(filedata) {
         var lines = filedata.toString('utf-8').split("\n");
         lines.forEach(function(line) {
-          console.log(line);
-          broadcast(line);
+          if (line.startsWith('get:')) {
+            var parts = line.split(' ');
+            var obj = {
+              time: parts[1],
+              src_node_id: parts[2],
+              dest_node_id: parts[3],
+              line_no: parts[10],
+              filename: parts[11]
+            };
+            var strobj = JSON.stringify(obj);
+            console.log(strobj);
+            broadcast(strobj);
+          }
         });
 				currentFilesize = stat.size;
 			});
