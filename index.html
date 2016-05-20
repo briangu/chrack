@@ -1,22 +1,104 @@
-<!DOCTYPE HTML>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Chrack</title>
+    <meta charset="utf-8">
+    <title>Dimensional Charting</title>
+    <link rel="stylesheet" type="text/css" href="http://dc-js.github.io/dc.js/css/dc.css"/>
+    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/d3.js"></script>
+    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+    <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/dc.js"></script>
+    <style>
+         .heat-box {
+           stroke: #E6E6E6;
+           stroke-width: 2px;
+         }
+    </style>
+</head>
+<body>
+  <div id="test"></div>
+
 <script>
+var data = {
+  0: {
+    0: 0,
+    1: 0,
+    2: 0,
+    3: 0
+  },
+  1: {
+    0: 0,
+    1: 0,
+    2: 0,
+    3: 0
+  },
+  2: {
+    0: 0,
+    1: 0,
+    2: 0,
+    3: 0
+  },
+  3: {
+    0: 0,
+    1: 0,
+    2: 0,
+    3: 0
+  }
+}
+var transformCountsToChartData = function() {
+  var chartData = [];
+  for (var src_node_id in data) {
+    for (var dest_node_id in data[src_node_id]) {
+      if (!isNaN(src_node_id) && !isNaN(dest_node_id)) {
+        var ndxData = {
+          key: [src_node_id, dest_node_id],
+          count: data[src_node_id][dest_node_id]
+        }
+        chartData.push(ndxData);
+      }
+    }
+  }
+  // console.log(maxCount);
+  // console.log(data);
+  return chartData;
+}
+
+var chart = dc.heatMap("#test");
+var ndx       = crossfilter(transformCountsToChartData()),
+    runDim    = ndx.dimension(function(d) { return [+d.key[0], +d.key[1]]; }),
+    runGroup  = runDim.group().reduceSum(function(d) { return +d.count; });
+var maxCount = 0;
+
+var heatColorMapping = function(d) {
+  return d3.scale.linear().domain([0,maxCount]).range(["lightgray", "red"])(d);
+};
+heatColorMapping.domain = function() {
+  return [0,maxCount];
+};
+
+chart
+  .width(45 * 20 + 80)
+  .height(45 * 5 + 40)
+  .dimension(runDim)
+  .group(runGroup)
+  .keyAccessor(function(d) { return +d.key[0]; })
+  .valueAccessor(function(d) { return +d.key[1]; })
+  .colorAccessor(function(d) { return +d.value; })
+  .colors(heatColorMapping)
+  .calculateColorDomain();
+
+chart.render();
+
+var periodicUpdater = function() {
+  ndx.add(transformCountsToChartData());
+  dc.redrawAll();
+}
+
 var connection
 window.addEventListener("load", function () {
 	connection = new WebSocket("ws://"+window.location.hostname+":8081")
 	connection.onopen = function () {
 		console.log("Connection opened")
-		// connection.send(nickname)
-		// document.getElementById("form").onsubmit = function (event) {
-		// 	var msg = document.getElementById("msg")
-		// 	if (msg.value)
-		// 		connection.send(msg.value)
-		// 	msg.value = ""
-		// 	event.preventDefault()
-		// }
 	}
 	connection.onclose = function () {
 		console.log("Connection closed")
@@ -25,14 +107,17 @@ window.addEventListener("load", function () {
 		console.error("Connection error")
 	}
 	connection.onmessage = function (event) {
-		var div = document.createElement("div")
-		div.textContent = event.data
-		document.body.appendChild(div)
+    var clientData = JSON.parse(event.data);
+    clientData.forEach(function(row) {
+      data[row.src_node_id][row.dest_node_id] += 1;
+      if (maxCount < data[row.src_node_id][row.dest_node_id]) {
+        maxCount = data[row.src_node_id][row.dest_node_id];
+      }
+    })
 	}
+
+  window.setInterval(periodicUpdater, 2000);
 })
 </script>
-</head>
-
-<body>
 </body>
 </html>

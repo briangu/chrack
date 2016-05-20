@@ -37,7 +37,7 @@ var currentFilesize = 0;
 function startWatching(filename) {
 	currentWatcher = fs.watch(filename, function(event){
 		fs.stat(filename, function(err,stat){
-      console.log("stat!", stat.size);
+      // console.log("stat!", stat.size);
 			if(err) {
 				console.log(err);
 				return;
@@ -46,12 +46,13 @@ function startWatching(filename) {
 				currentFilesize = stat.size;
 				return;
 			}
-      console.log("reading ", stat.size);
+      // console.log("reading ", stat.size);
 			var stream = fs.createReadStream(filename, { start: currentFilesize, end: stat.size});
 			stream.addListener("error",function(err){
         console.log(err);
 			});
 			stream.addListener("data", function(filedata) {
+        var clientData = [];
         var lines = filedata.toString('utf-8').split("\n");
         lines.forEach(function(line) {
           if (line.startsWith('get:')) {
@@ -63,11 +64,21 @@ function startWatching(filename) {
               line_no: parts[10],
               filename: parts[11]
             };
-            var strobj = JSON.stringify(obj);
-            console.log(strobj);
-            broadcast(strobj);
+           // allow filename to be empty
+           //  (typeof(obj.filename) === "string" && obj.filename.length > 0)
+            if (!isNaN(obj.time) &&
+                !isNaN(obj.src_node_id) &&
+                !isNaN(obj.dest_node_id) &&
+                !isNaN(obj.line_no)) {
+              clientData.push(obj);
+            } else {
+              console.log("DROPPING: ", line);
+            }
           }
         });
+        if (clientData.length > 0) {
+          broadcast(JSON.stringify(clientData));
+        }
 				currentFilesize = stat.size;
 			});
 		});
