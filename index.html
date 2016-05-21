@@ -17,32 +17,34 @@
 </head>
 <body>
   <div id="test"></div>
+  <div class=".dc-data-table" id="event-table"></div>
 
 <script>
+var maxCount = 0;
 var data = {
   0: {
-    0: 0,
-    1: 0,
-    2: 0,
-    3: 0
+    0: { count: 0, events: [] },
+    1: { count: 0, events: [] },
+    2: { count: 0, events: [] },
+    3: { count: 0, events: [] }
   },
   1: {
-    0: 0,
-    1: 0,
-    2: 0,
-    3: 0
+    0: { count: 0, events: [] },
+    1: { count: 0, events: [] },
+    2: { count: 0, events: [] },
+    3: { count: 0, events: [] }
   },
   2: {
-    0: 0,
-    1: 0,
-    2: 0,
-    3: 0
+    0: { count: 0, events: [] },
+    1: { count: 0, events: [] },
+    2: { count: 0, events: [] },
+    3: { count: 0, events: [] }
   },
   3: {
-    0: 0,
-    1: 0,
-    2: 0,
-    3: 0
+    0: { count: 0, events: [] },
+    1: { count: 0, events: [] },
+    2: { count: 0, events: [] },
+    3: { count: 0, events: [] }
   }
 }
 var transformCountsToChartData = function() {
@@ -52,22 +54,18 @@ var transformCountsToChartData = function() {
       if (!isNaN(src_node_id) && !isNaN(dest_node_id)) {
         var ndxData = {
           key: [src_node_id, dest_node_id],
-          count: data[src_node_id][dest_node_id]
+          count: data[src_node_id][dest_node_id].count
         }
         chartData.push(ndxData);
       }
     }
   }
-  // console.log(maxCount);
-  // console.log(data);
   return chartData;
 }
 
-var chart = dc.heatMap("#test");
 var ndx       = crossfilter(transformCountsToChartData()),
     runDim    = ndx.dimension(function(d) { return [+d.key[0], +d.key[1]]; }),
     runGroup  = runDim.group().reduceSum(function(d) { return +d.count; });
-var maxCount = 0;
 
 var heatColorMapping = function(d) {
   return d3.scale.linear().domain([0,maxCount]).range(["lightgray", "red"])(d);
@@ -76,6 +74,7 @@ heatColorMapping.domain = function() {
   return [0,maxCount];
 };
 
+var chart = dc.heatMap("#test");
 chart
   .width(45 * 20 + 80)
   .height(45 * 5 + 40)
@@ -86,8 +85,39 @@ chart
   .colorAccessor(function(d) { return +d.value; })
   .colors(heatColorMapping)
   .calculateColorDomain();
-
 chart.render();
+
+var countDimension = ndx.dimension(function (d) {
+    return d.count;
+});
+
+var nasdaqTable = dc.dataTable('.dc-data-table');
+nasdaqTable /* dc.dataTable('.dc-data-table', 'chartGroup') */
+  .dimension(countDimension)
+  // Data table does not use crossfilter group but rather a closure
+  // as a grouping function
+  .group(function (d) {
+     var format = d3.format('02d');
+     return format((d.count);
+  })
+  // (_optional_) max number of records to be shown, `default = 25`
+  // .size(10)
+  // There are several ways to specify the columns; see the data-table documentation.
+  // This code demonstrates generating the column header automatically based on the columns.
+  .columns([
+     'count',
+     'line_no',
+     'filename'
+  ])
+  // (_optional_) sort using the given field, `default = function(d){return d;}`
+  .sortBy(function (d) {
+     return d.count;
+  })
+  // (_optional_) sort order, `default = d3.ascending`
+  .order(d3.descending)
+  // (_optional_) custom renderlet to post-process chart using [D3](http://d3js.org)
+  );
+
 
 var periodicUpdater = function() {
   ndx.add(transformCountsToChartData());
@@ -109,9 +139,11 @@ window.addEventListener("load", function () {
 	connection.onmessage = function (event) {
     var clientData = JSON.parse(event.data);
     clientData.forEach(function(row) {
-      data[row.src_node_id][row.dest_node_id] += 1;
-      if (maxCount < data[row.src_node_id][row.dest_node_id]) {
-        maxCount = data[row.src_node_id][row.dest_node_id];
+      var intersection = data[row.src_node_id][row.dest_node_id];
+      intersection.count += 1;
+      intersection.events.push(row);
+      if (maxCount < intersection.count) {
+        maxCount = intersection.count;
       }
     })
 	}
