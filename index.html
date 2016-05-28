@@ -18,7 +18,9 @@
 <body>
   <div id="test"></div>
   <!-- <div class=".dc-data-table" id="event-table"></div> -->
-  <table id="codeTable"></table>
+  <div>
+    <table id="codeTable"></table>
+  </div>
 
 <script>
 var selection = null;
@@ -164,13 +166,16 @@ chart.on('filtered.selected', function(chart, filter) {
   });
   console.log(selection);
 
-  var table = document.getElementById("table");
-  Object.keys(selection.expectedFilename).forEach(function(key) {
+  var table = document.getElementById("codeTable");
+  table.innerHTML = "";
+  Object.keys(selection[expectedFilename]).forEach(function(key) {
     var row = table.insertRow(0);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
-    cell1.innerHTML = selection.expectedFilename[key];
-    cell2.innerHTML = selection.expectedFilename;
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = selection[expectedFilename][key];
+    cell2.innerHTML = key;
+    cell3.innerHTML = expectedFilename;
   });
 });
 
