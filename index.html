@@ -22,7 +22,10 @@
     <table id="codeTable"></table>
   </div>
 
+
 <script>
+var expectedFilename = "word2vec_dsgd.chpl";
+var sourceFileContents;
 var selection = null;
 var needUpdate = true;
 var maxCount = 0;
@@ -119,6 +122,9 @@ window.addEventListener("load", function () {
 	connection.onmessage = function (event) {
     var clientData = JSON.parse(event.data);
     console.log(clientData);
+    // TODO: consume the filenames automatically and activiely filter the log data by this
+    // expectedFilename = "word2vec_dsgd.chpl";
+    sourceFileContents = clientData.sourceFile[expectedFilename];
     Object.keys(clientData.eventData).forEach(function(src_node_id) {
       Object.keys(clientData.eventData[src_node_id]).forEach(function(dest_node_id){
         console.log(src_node_id, " ", dest_node_id);
@@ -152,7 +158,6 @@ chart.on('filtered.selected', function(chart, filter) {
   var intersection = data[src_node_id][dest_node_id];
   console.log(intersection.count);
   // console.log(intersection.events);
-  var expectedFilename = "word2vec_dsgd.chpl";
   selection = {}
   selection[expectedFilename] = {};
   intersection.events.forEach(function(row) {

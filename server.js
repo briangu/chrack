@@ -18,7 +18,7 @@ http.createServer(function (req, res) {
 
 var server = ws.createServer(function (connection) {
 	connection.on("text", function (str) {
-		broadcastLatestEventData();
+		broadcastLatestEventData("word2vec_dsgd.chpl");
 	})
 	connection.on("close", function () {
 		console.log("closing");
@@ -32,11 +32,15 @@ function broadcast(str) {
 	})
 }
 
-function broadcastLatestEventData() {
+function broadcastLatestEventData(filename) {
+	var sourceFileContents = loadSourceFile(filename);
 	var clientData =
 		{
 			maxCount: maxCount,
-			eventData: eventData
+			eventData: eventData,
+			sourceFile: {
+				"word2vec_dsgd.chpl": sourceFileContents
+			}
 		};
 	console.log("clientData: ", clientData);
 	broadcast(JSON.stringify(clientData));
@@ -113,6 +117,10 @@ function addEvent(eventObj) {
 // 		});
 // 	});
 // }
+
+function loadSourceFile(filename) {
+	return fs.readFileSync(filename, 'utf8')
+}
 
 function loadFile(filename) {
 	console.log("loading file ", filename);
