@@ -20,6 +20,7 @@
   <div class=".dc-data-table" id="event-table"></div>
 
 <script>
+var selection = null;
 var needUpdate = true;
 var maxCount = 0;
 var data = {
@@ -136,6 +137,10 @@ window.addEventListener("load", function () {
 })
 
 chart.on('filtered.selected', function(chart, filter) {
+  if (selection !== null) {
+    selection = null;
+    return;
+  }
   console.log("selected: ", filter);
   // console.log(data[]);
   console.log(filter[0], filter[1]);
@@ -144,17 +149,19 @@ chart.on('filtered.selected', function(chart, filter) {
   var intersection = data[src_node_id][dest_node_id];
   console.log(intersection.count);
   // console.log(intersection.events);
-  var unique_line_no = {};
+  var expectedFilename = "word2vec_dsgd.chpl";
+  selection = {}
+  selection[expectedFilename] = {};
   intersection.events.forEach(function(row) {
-    if (row.filename === "word2vec_dsgd.chpl") {
-      if (unique_line_no[row.line_no] === undefined) {
+    if (row.filename === expectedFilename) {
+      if (selection[expectedFilename][row.line_no] === undefined) {
         // console.log(row.line_no, row.filename);
-        unique_line_no[row.line_no] = 0;
+        selection[expectedFilename][row.line_no] = 0;
       }
-      unique_line_no[row.line_no] += 1;
+      selection[expectedFilename][row.line_no] += 1;
     }
   });
-  console.log(unique_line_no);
+  console.log(selection);
 });
 
 // chart.on('filtered.unselected', function(chart, filter) {
