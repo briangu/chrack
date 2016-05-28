@@ -35,15 +35,13 @@ function broadcast(str) {
 }
 
 function broadcastLatestEventData(filename) {
-	var sourceFileContents = loadSourceFile(filename);
 	var clientData =
 		{
 			maxCount: maxCount,
 			eventData: eventData,
-			sourceFile: {
-				filename: sourceFileContents
-			}
+			sourceFile: {}
 		};
+	clientData["sourceFile"][filename] = loadSourceFile(filename);
 	// console.log("clientData: ", clientData);
 	broadcast(JSON.stringify(clientData));
 }
