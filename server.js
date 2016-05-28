@@ -42,7 +42,7 @@ function broadcastLatestEventData(filename) {
 				"word2vec_dsgd.chpl": sourceFileContents
 			}
 		};
-	console.log("clientData: ", clientData);
+	// console.log("clientData: ", clientData);
 	broadcast(JSON.stringify(clientData));
 }
 

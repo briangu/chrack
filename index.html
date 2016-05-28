@@ -121,7 +121,7 @@ window.addEventListener("load", function () {
 	}
 	connection.onmessage = function (event) {
     var clientData = JSON.parse(event.data);
-    console.log(clientData);
+    // console.log(clientData);
     // TODO: consume the filenames automatically and activiely filter the log data by this
     // expectedFilename = "word2vec_dsgd.chpl";
     sourceFileContents = clientData.sourceFile[expectedFilename];
@@ -146,6 +146,8 @@ window.addEventListener("load", function () {
 })
 
 chart.on('filtered.selected', function(chart, filter) {
+  var table = document.getElementById("codeTable");
+  table.innerHTML = "";
   if (selection !== null) {
     selection = null;
     return;
@@ -171,8 +173,6 @@ chart.on('filtered.selected', function(chart, filter) {
   });
   console.log(selection);
 
-  var table = document.getElementById("codeTable");
-  table.innerHTML = "";
   Object.keys(selection[expectedFilename]).forEach(function(key) {
     var row = table.insertRow(-1);
     var cell1 = row.insertCell(0);
