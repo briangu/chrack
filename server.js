@@ -12,13 +12,15 @@ var eventData = {};
 var maxCount = 0;
 var localeCount = 0;
 
+var expectedFilename = process.argv[2];
+
 http.createServer(function (req, res) {
 	fs.createReadStream("index.html").pipe(res)
 }).listen(8080)
 
 var server = ws.createServer(function (connection) {
 	connection.on("text", function (str) {
-		broadcastLatestEventData("word2vec_dsgd.chpl");
+		broadcastLatestEventData(expectedFilename);
 	})
 	connection.on("close", function () {
 		console.log("closing");
@@ -159,7 +161,7 @@ function loadFile(filename) {
 // tail.stdout.on("data", function (data) {
 //   broadcast(data.toString("utf8"));
 // });
-var watchDir = process.argv[2] || ".";
+var watchDir = process.argv[3] || ".";
 console.log("watching directory: ", watchDir);
 
 fs.readdirSync(watchDir).forEach(function(filename) {
