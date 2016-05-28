@@ -1,0 +1,834 @@
+ChplVdebug: ver 1.1 nodes 4 nid 3 tid 3 seq 34253127668.000 1464445853.128159 0.006464 0.022921 
+fork: 1464445853.128224 3 2 -2 169 0x119e1a000 56 3 
+Etask: 1464445853.128491 3 3
+task: 1464445855.251911 3 4 5 O 0 <unknown>
+Btask: 1464445855.251938 3 4
+get: 1464445855.251955 3 1 4 0x1126a9f30 0x11b20e020 1 -1 16 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+get: 1464445855.252033 3 1 4 0x1126a9f28 0x11f60d040 1 -1 8 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+task: 1464445855.252151 3 6 4 L 179 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.252163 3 7 4 L 182 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445855.252169 3 6
+Etask: 1464445855.252178 3 6
+Btask: 1464445855.252184 3 7
+Etask: 1464445855.252191 3 7
+Etask: 1464445855.252226 3 4
+task: 1464445855.252787 3 8 1 O 0 <unknown>
+Btask: 1464445855.252808 3 8
+get: 1464445855.252820 3 1 8 0x1161ffe90 0x11fa0d020 1 -1 16 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+get: 1464445855.252886 3 1 8 0x1161ffe88 0x11f60d040 1 -1 8 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+task: 1464445855.252963 3 9 8 L 179 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.252976 3 10 8 L 182 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445855.252980 3 9
+Etask: 1464445855.252987 3 9
+Btask: 1464445855.252998 3 10
+Etask: 1464445855.253005 3 10
+Etask: 1464445855.253031 3 8
+task: 1464445855.253472 3 11 5 O 0 <unknown>
+Btask: 1464445855.253492 3 11
+get: 1464445855.253502 3 1 11 0x11a7ffe90 0x11fa0d070 1 -1 16 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+get: 1464445855.253572 3 1 11 0x11a7ffe88 0x11f60d040 1 -1 8 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+task: 1464445855.253654 3 12 11 L 179 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.253664 3 13 11 L 182 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445855.253671 3 12
+Etask: 1464445855.253678 3 12
+Btask: 1464445855.253678 3 13
+Etask: 1464445855.253684 3 13
+Etask: 1464445855.253712 3 11
+task: 1464445855.253938 3 14 5 O 0 <unknown>
+Btask: 1464445855.253957 3 14
+get: 1464445855.255274 3 0 14 0x111ea9150 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.255478 3 15 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.255489 3 16 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.255495 3 17 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.255501 3 18 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445855.255502 3 15
+Btask: 1464445855.255513 3 16
+Btask: 1464445855.255524 3 17
+Btask: 1464445855.255507 3 18
+Etask: 1464445855.318803 3 15
+Etask: 1464445855.325581 3 16
+Etask: 1464445855.325714 3 17
+Etask: 1464445855.328001 3 18
+task: 1464445855.328065 3 19 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.328081 3 20 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.328088 3 21 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.328096 3 22 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445855.328101 3 22
+Btask: 1464445855.328191 3 19
+Btask: 1464445855.328206 3 21
+Btask: 1464445855.329267 3 20
+Etask: 1464445855.426521 3 19
+Etask: 1464445855.428887 3 22
+Etask: 1464445855.429136 3 21
+Etask: 1464445855.429836 3 20
+get: 1464445855.429889 3 0 14 0x111ea9150 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.430148 3 23 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.430163 3 24 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.430169 3 25 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445855.430179 3 26 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445855.430184 3 26
+Btask: 1464445855.430335 3 23
+Btask: 1464445855.430343 3 25
+Btask: 1464445855.430336 3 24
+Etask: 1464445855.689211 3 23
+Etask: 1464445855.695685 3 24
+Etask: 1464445855.695905 3 25
+Etask: 1464445855.700351 3 26
+get: 1464445855.700371 3 0 14 0x111ea9bcc 0x10b60f07c 1 -1 4 995 word2vec_dsgd.chpl
+get: 1464445855.700545 3 0 14 0x111ea9b50 0x10b60f060 1 -1 32 995 word2vec_dsgd.chpl
+get: 1464445855.700908 3 0 14 0x119ea9000 0x10b60e020 1 -1 13 995 word2vec_dsgd.chpl
+get: 1464445855.701115 3 0 14 0x111ea9afc 0x10b60f0bc 1 -1 4 995 word2vec_dsgd.chpl
+get: 1464445855.701286 3 0 14 0x111ea9a80 0x10b60f0a0 1 -1 32 995 word2vec_dsgd.chpl
+get: 1464445855.701442 3 0 14 0x119e19000 0x10b60f1c0 1 -1 17 995 word2vec_dsgd.chpl
+get: 1464445855.701544 3 0 14 0x111ea9a2c 0x10b60f09c 1 -1 4 995 word2vec_dsgd.chpl
+get: 1464445855.701670 3 0 14 0x111ea99b0 0x10b60f080 1 -1 32 995 word2vec_dsgd.chpl
+get: 1464445855.701941 3 0 14 0x111ea80a0 0x10b60f0e0 1 -1 32 2212 /Users/brian/scm/chapel/modules/standard/IO.chpl
+get: 1464445855.702081 3 0 14 0x119e1b008 0x1021318bc 1 -1 1 437 word2vec_dsgd.chpl
+task: 1464445855.702370 3 27 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.702384 3 28 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.702393 3 29 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445855.702404 3 30 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445855.702409 3 30
+Btask: 1464445855.702541 3 27
+Btask: 1464445855.702551 3 29
+Btask: 1464445855.702777 3 28
+Etask: 1464445855.816468 3 28
+Etask: 1464445855.818374 3 27
+Etask: 1464445855.824545 3 29
+Etask: 1464445855.825877 3 30
+fork: 1464445856.618154 3 0 -2 249 0x119c0e050 72 14 
+fork: 1464445856.619534 3 0 -2 249 0x119c0e050 72 14 
+task: 1464445856.932422 3 31 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445856.932456 3 32 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445856.932460 3 31
+Btask: 1464445856.932471 3 32
+task: 1464445856.932466 3 33 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445856.932488 3 34 14 L 3142 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445856.932498 3 33
+Btask: 1464445856.932502 3 34
+Etask: 1464445856.932695 3 31
+Etask: 1464445856.932698 3 33
+Etask: 1464445856.932697 3 32
+Etask: 1464445856.932704 3 34
+get: 1464445857.528101 3 0 14 0x111ea9010 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445857.528301 3 35 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445857.528337 3 35
+task: 1464445857.528424 3 36 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445857.528435 3 37 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445857.528442 3 38 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445857.528442 3 36
+Btask: 1464445857.528453 3 38
+Btask: 1464445857.528448 3 37
+Etask: 1464445857.965780 3 37
+Etask: 1464445857.965927 3 36
+Etask: 1464445857.972543 3 35
+Etask: 1464445858.028000 3 38
+get: 1464445858.028350 3 0 14 0x111ea9010 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445858.028564 3 39 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445858.028590 3 40 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445858.028596 3 39
+task: 1464445858.028600 3 41 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445858.028612 3 40
+task: 1464445858.028644 3 42 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445858.028653 3 41
+Btask: 1464445858.028669 3 42
+Etask: 1464445858.114140 3 41
+Etask: 1464445858.114449 3 40
+Etask: 1464445858.114843 3 39
+Etask: 1464445858.140476 3 42
+get: 1464445858.140557 3 0 14 0x111ea9010 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445858.140672 3 43 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445858.141133 3 44 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445858.141138 3 43
+task: 1464445858.141179 3 45 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445858.141188 3 44
+Btask: 1464445858.141213 3 45
+task: 1464445858.141226 3 46 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445858.141232 3 46
+Etask: 1464445858.315520 3 43
+Etask: 1464445858.317304 3 44
+Etask: 1464445858.329307 3 45
+Etask: 1464445858.367159 3 46
+get: 1464445858.367178 3 0 14 0x111ea9e40 0x16154e0b8 1 -1 16 647 word2vec_dsgd.chpl
+get: 1464445858.367293 3 0 14 0x111ea8f90 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.367351 3 0 14 0x111ea8f90 0x10b62e398 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.367451 3 0 14 0x111ea8ed0 0x16154e0c8 1 -1 16 654 word2vec_dsgd.chpl
+get: 1464445858.367545 3 0 14 0x111ea8550 0x1612c4860 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445858.367646 3 0 -2 10 0x15f0272d0 72 14 
+get: 1464445858.367780 3 0 14 0x111ea85b0 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.367898 3 0 14 0x111ea85b0 0x10b62e398 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.367976 3 0 14 0x111ea8550 0x10b62e360 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445858.368074 3 0 -2 10 0x15f0272d0 72 14 
+fork: 1464445858.368210 3 0 -2 39 0x119e1a1c0 56 14 
+fork: 1464445858.368357 3 0 -2 141 0x119e21000 88 14 
+put: 1464445858.371253 3 0 14 0x111ea8500 0x1612c5210 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445858.371388 3 0 14 0x111ea85b0 0x1612c5210 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445858.371479 3 0 -2 10 0x15f0272d0 72 14 
+fork: 1464445858.371733 3 0 -2 10 0x15f0272d0 72 14 
+fork: 1464445858.371887 3 0 -2 46 0x119e1a1c0 56 14 
+get: 1464445858.373924 3 0 14 0x111ea85d0 0x1612c5220 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.374016 3 0 14 0x111ea85c8 0x1612c5230 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.374211 3 0 14 0x111ea85b0 0x1612c5220 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.374362 3 0 14 0x111ea85a8 0x1612c5238 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.374464 3 0 14 0x111ea85a0 0x1612c5248 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.374655 3 0 14 0x111ea8560 0x1612c5220 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.374777 3 0 14 0x111ea8548 0x1612c5248 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.374889 3 0 14 0x111ea8540 0x1612c5240 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.375030 3 0 14 0x111ea85a0 0x1612c5220 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445858.375131 3 0 14 0x111ea8548 0x1612c5240 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.375234 3 0 14 0x111ea8540 0x1612c5248 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.375330 3 0 14 0x111ea8530 0x1612c5280 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445858.375435 3 0 14 0x179c00000 0x161a00000 1 -1 114065600 654 word2vec_dsgd.chpl
+get: 1464445859.018786 3 0 14 0x111ea89b0 0x16154e108 1 -1 16 663 word2vec_dsgd.chpl
+get: 1464445859.018917 3 0 14 0x111ea8550 0x1612c49e0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445859.019015 3 0 -2 10 0x15f0272d0 72 14 
+get: 1464445859.019222 3 0 14 0x111ea85b0 0x10b62e2d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.019328 3 0 14 0x111ea85b0 0x10b62e2f8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.019426 3 0 14 0x111ea8550 0x10b62e2c0 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445859.019531 3 0 -2 10 0x15f0272d0 72 14 
+fork: 1464445859.019687 3 0 -2 39 0x119e1a1c0 56 14 
+fork: 1464445859.019972 3 0 -2 141 0x119e21000 88 14 
+put: 1464445859.023133 3 0 14 0x111ea8500 0x1612c52d0 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445859.023245 3 0 14 0x111ea85b0 0x1612c52d0 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445859.023389 3 0 -2 10 0x15f0272d0 72 14 
+fork: 1464445859.023634 3 0 -2 10 0x15f0272d0 72 14 
+fork: 1464445859.023864 3 0 -2 46 0x119e1a1c0 56 14 
+get: 1464445859.024036 3 0 14 0x111ea85d0 0x1612c52e0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024135 3 0 14 0x111ea85c8 0x1612c52f0 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024224 3 0 14 0x111ea85b0 0x1612c52e0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024340 3 0 14 0x111ea85a8 0x1612c52f8 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024441 3 0 14 0x111ea85a0 0x1612c5308 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024526 3 0 14 0x111ea8560 0x1612c52e0 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024656 3 0 14 0x111ea8548 0x1612c5308 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024751 3 0 14 0x111ea8540 0x1612c5300 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.024842 3 0 14 0x111ea85a0 0x1612c52e0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445859.024946 3 0 14 0x111ea8548 0x1612c5300 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.025033 3 0 14 0x111ea8540 0x1612c5308 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.025130 3 0 14 0x111ea8530 0x1612c5340 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445859.025248 3 0 14 0x179c00000 0x168a00000 1 -1 114065600 663 word2vec_dsgd.chpl
+fork: 1464445859.705512 3 0 -2 57 0x119e1a1c0 56 14 
+task: 1464445859.706115 3 47 14 O 0 <unknown>
+Btask: 1464445859.706136 3 47
+Etask: 1464445859.706347 3 47
+fork: 1464445859.706402 3 0 -2 57 0x119e1a1c0 56 14 
+task: 1464445859.708586 3 48 1 O 0 <unknown>
+Btask: 1464445859.708614 3 48
+Etask: 1464445859.708670 3 48
+get: 1464445859.708816 3 0 14 0x111ea9010 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445859.708933 3 49 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445859.708945 3 50 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445859.709051 3 49
+task: 1464445859.709058 3 51 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445859.709064 3 50
+task: 1464445859.709068 3 52 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445859.709089 3 51
+Btask: 1464445859.709528 3 52
+Etask: 1464445859.867991 3 50
+Etask: 1464445859.874658 3 49
+Etask: 1464445859.881992 3 52
+Etask: 1464445859.928491 3 51
+get: 1464445859.928534 3 0 14 0x111ea9010 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445859.928746 3 53 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445859.928764 3 54 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445859.928771 3 55 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445859.928775 3 56 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445859.928815 3 53
+Btask: 1464445859.928818 3 54
+Btask: 1464445859.928848 3 55
+Btask: 1464445859.928853 3 56
+Etask: 1464445860.103114 3 53
+Etask: 1464445860.103689 3 56
+Etask: 1464445860.123883 3 54
+Etask: 1464445860.256872 3 55
+get: 1464445860.256930 3 0 14 0x111ea9010 0x10b60e010 1 -1 16 631 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445860.257056 3 57 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+task: 1464445860.257073 3 58 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445860.257077 3 57
+task: 1464445860.257080 3 59 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445860.257248 3 58
+task: 1464445860.257253 3 60 14 L 632 /Users/brian/scm/chapel/modules/internal/ChapelBase.chpl
+Btask: 1464445860.257270 3 59
+Btask: 1464445860.257274 3 60
+Etask: 1464445860.384920 3 58
+Etask: 1464445860.386325 3 57
+Etask: 1464445860.434576 3 60
+Etask: 1464445860.491191 3 59
+get: 1464445860.491801 3 0 14 0x111ea9e40 0x16154e0b8 1 -1 16 647 word2vec_dsgd.chpl
+get: 1464445860.491882 3 0 14 0x111ea8f90 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.492047 3 0 14 0x111ea8f90 0x10b62e398 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.492165 3 0 14 0x111ea8ed0 0x16154e0c8 1 -1 16 654 word2vec_dsgd.chpl
+get: 1464445860.492330 3 0 14 0x111ea8550 0x1612c4860 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445860.492539 3 0 -2 10 0x15f0275a0 72 14 
+get: 1464445860.492689 3 0 14 0x111ea85b0 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.492804 3 0 14 0x111ea85b0 0x10b62e398 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.492951 3 0 14 0x111ea8550 0x10b62e360 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445860.493098 3 0 -2 10 0x15f0275a0 72 14 
+fork: 1464445860.493459 3 0 -2 39 0x119e1a1c0 56 14 
+fork: 1464445860.493990 3 0 -2 141 0x119e21060 88 14 
+put: 1464445860.497761 3 0 14 0x111ea8500 0x1612c52d0 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445860.497939 3 0 14 0x111ea85b0 0x1612c52d0 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445860.498040 3 0 -2 10 0x15f0275a0 72 14 
+fork: 1464445860.498168 3 0 -2 10 0x15f0275a0 72 14 
+fork: 1464445860.498539 3 0 -2 46 0x119e1a1c0 56 14 
+get: 1464445860.498949 3 0 14 0x111ea85d0 0x1612c52e0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.499115 3 0 14 0x111ea85c8 0x1612c52f0 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.499287 3 0 14 0x111ea85b0 0x1612c52e0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.499390 3 0 14 0x111ea85a8 0x1612c52f8 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.499507 3 0 14 0x111ea85a0 0x1612c5308 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.499667 3 0 14 0x111ea8560 0x1612c52e0 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.499773 3 0 14 0x111ea8548 0x1612c5308 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.499921 3 0 14 0x111ea8540 0x1612c5300 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.500092 3 0 14 0x111ea85a0 0x1612c52e0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445860.500305 3 0 14 0x111ea8548 0x1612c5300 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.500423 3 0 14 0x111ea8540 0x1612c5308 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.500650 3 0 14 0x111ea8530 0x1612c5340 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445860.500755 3 0 14 0x18ec00000 0x161a00000 1 -1 114065600 654 word2vec_dsgd.chpl
+get: 1464445861.135230 3 0 14 0x111ea89b0 0x16154e108 1 -1 16 663 word2vec_dsgd.chpl
+get: 1464445861.135331 3 0 14 0x111ea8550 0x1612c49e0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445861.135402 3 0 -2 10 0x15f0275a0 72 14 
+get: 1464445861.135602 3 0 14 0x111ea85b0 0x10b62e2d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.135687 3 0 14 0x111ea85b0 0x10b62e2f8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.135803 3 0 14 0x111ea8550 0x10b62e2c0 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445861.135923 3 0 -2 10 0x15f0275a0 72 14 
+fork: 1464445861.136119 3 0 -2 39 0x119e1a1c0 56 14 
+fork: 1464445861.136322 3 0 -2 141 0x119e21060 88 14 
+put: 1464445861.139767 3 0 14 0x111ea8500 0x10fc200d0 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445861.139869 3 0 14 0x111ea85b0 0x10fc200d0 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445861.139963 3 0 -2 10 0x15f0275a0 72 14 
+fork: 1464445861.140152 3 0 -2 10 0x15f0275a0 72 14 
+fork: 1464445861.140308 3 0 -2 46 0x119e1a1c0 56 14 
+get: 1464445861.140500 3 0 14 0x111ea85d0 0x10fc200e0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.140606 3 0 14 0x111ea85c8 0x10fc200f0 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.140714 3 0 14 0x111ea85b0 0x10fc200e0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.140807 3 0 14 0x111ea85a8 0x10fc200f8 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.140924 3 0 14 0x111ea85a0 0x10fc20108 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.141022 3 0 14 0x111ea8560 0x10fc200e0 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.141164 3 0 14 0x111ea8548 0x10fc20108 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.141284 3 0 14 0x111ea8540 0x10fc20100 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.141382 3 0 14 0x111ea85a0 0x10fc200e0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445861.141493 3 0 14 0x111ea8548 0x10fc20100 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.141607 3 0 14 0x111ea8540 0x10fc20108 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.141693 3 0 14 0x111ea8530 0x10fc20140 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.141804 3 0 14 0x18ec00000 0x168a00000 1 -1 114065600 663 word2vec_dsgd.chpl
+fork: 1464445861.791237 3 0 -2 57 0x119e1a1c0 56 14 
+task: 1464445861.791388 3 61 14 O 0 <unknown>
+Btask: 1464445861.791410 3 61
+Etask: 1464445861.791470 3 61
+fork: 1464445861.791573 3 0 -2 57 0x119e1a1c0 56 14 
+task: 1464445861.791689 3 62 1 O 0 <unknown>
+Btask: 1464445861.791711 3 62
+Etask: 1464445861.791756 3 62
+fork: 1464445861.791930 3 0 -2 14 0x15f0275a0 72 14 
+Etask: 1464445861.792097 3 14
+task: 1464445861.822332 3 63 5 O 0 <unknown>
+Btask: 1464445861.822364 3 63
+get: 1464445861.822378 3 1 63 0x11a7ffe90 0x11f81a030 1 -1 16 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+get: 1464445861.822459 3 1 63 0x11a7ffe88 0x11f60d040 1 -1 8 146 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+get: 1464445861.822564 3 1 63 0x11a7ffe60 0x11f81a020 1 -1 16 147 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+get: 1464445861.822699 3 0 63 0x11a7ffc90 0x1612c78d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.822789 3 0 63 0x11a7ffc90 0x1612c78d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.822906 3 0 63 0x11a7ffc90 0x1612c78d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445861.823055 3 0 63 0x11a7ffbd8 0x1612c78d0 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445861.823179 3 0 63 0x11a7ffbd0 0x1612c78d8 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445861.823281 3 0 63 0x11a7ffbc8 0x1612c78d8 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445861.823421 3 0 63 0x11a7ffbc0 0x1612c78d0 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445861.823536 3 0 63 0x11a7ffc90 0x1612c78d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445861.823634 3 0 -2 118 0x119e1a080 56 63 
+fork: 1464445861.823840 3 0 -2 10 0x15f027410 72 63 
+task: 1464445861.824021 3 64 63 L 179 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445861.824036 3 65 63 L 182 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445861.824045 3 64
+Etask: 1464445861.824056 3 64
+Btask: 1464445861.824055 3 65
+Etask: 1464445861.824067 3 65
+Etask: 1464445861.824097 3 63
+task: 1464445861.829290 3 66 5 O 0 <unknown>
+Btask: 1464445861.829306 3 66
+get: 1464445861.829316 3 0 66 0x111ea9dcc 0x10b60f07c 1 -1 4 1022 word2vec_dsgd.chpl
+get: 1464445861.829387 3 0 66 0x111ea9d50 0x10b60f060 1 -1 32 1022 word2vec_dsgd.chpl
+get: 1464445861.829469 3 0 66 0x119ea9000 0x10b60e020 1 -1 13 1022 word2vec_dsgd.chpl
+get: 1464445861.829563 3 0 66 0x111ea8ef0 0x10b60f0e0 1 -1 32 2212 /Users/brian/scm/chapel/modules/standard/IO.chpl
+get: 1464445861.829632 3 0 66 0x119e1b040 0x1021318bc 1 -1 1 1022 word2vec_dsgd.chpl
+get: 1464445861.829797 3 0 66 0x111ea9dcc 0x10b60f07c 1 -1 4 1022 word2vec_dsgd.chpl
+get: 1464445861.829866 3 0 66 0x111ea9d50 0x10b60f060 1 -1 32 1022 word2vec_dsgd.chpl
+get: 1464445861.829962 3 0 66 0x119ea9000 0x10b60e020 1 -1 13 1022 word2vec_dsgd.chpl
+get: 1464445861.830046 3 0 66 0x111ea8ef0 0x10b60f0e0 1 -1 32 2212 /Users/brian/scm/chapel/modules/standard/IO.chpl
+get: 1464445861.830143 3 0 66 0x119e1b040 0x1021318bc 1 -1 1 1022 word2vec_dsgd.chpl
+get: 1464445861.830248 3 0 66 0x111ea9dcc 0x10b60f07c 1 -1 4 1022 word2vec_dsgd.chpl
+get: 1464445861.830337 3 0 66 0x111ea9d50 0x10b60f060 1 -1 32 1022 word2vec_dsgd.chpl
+get: 1464445861.830447 3 0 66 0x119ea9000 0x10b60e020 1 -1 13 1022 word2vec_dsgd.chpl
+get: 1464445861.830532 3 0 66 0x111ea8ef0 0x10b60f0e0 1 -1 32 2212 /Users/brian/scm/chapel/modules/standard/IO.chpl
+get: 1464445861.830610 3 0 66 0x119e1b040 0x1021318bc 1 -1 1 1022 word2vec_dsgd.chpl
+get: 1464445861.830702 3 0 66 0x111ea9dcc 0x10b60f07c 1 -1 4 1022 word2vec_dsgd.chpl
+get: 1464445861.830773 3 0 66 0x111ea9d50 0x10b60f060 1 -1 32 1022 word2vec_dsgd.chpl
+get: 1464445861.830844 3 0 66 0x119ea9000 0x10b60e020 1 -1 13 1022 word2vec_dsgd.chpl
+get: 1464445861.830924 3 0 66 0x111ea8ef0 0x10b60f0e0 1 -1 32 2212 /Users/brian/scm/chapel/modules/standard/IO.chpl
+get: 1464445861.831008 3 0 66 0x119e1b040 0x1021318bc 1 -1 1 1022 word2vec_dsgd.chpl
+Etask: 1464445861.831117 3 66
+task: 1464445861.831259 3 67 5 O 0 <unknown>
+Btask: 1464445861.831280 3 67
+task: 1464445861.832792 3 68 67 L 1039 word2vec_dsgd.chpl
+task: 1464445861.832805 3 69 67 L 1039 word2vec_dsgd.chpl
+task: 1464445861.832812 3 70 67 L 1039 word2vec_dsgd.chpl
+Btask: 1464445861.832814 3 68
+Btask: 1464445861.832820 3 69
+task: 1464445861.832818 3 71 67 L 1039 word2vec_dsgd.chpl
+Btask: 1464445861.832974 3 70
+Btask: 1464445861.832976 3 71
+Etask: 1464445917.884017 3 69
+Etask: 1464445918.139101 3 70
+Etask: 1464445918.344522 3 68
+Etask: 1464445918.402893 3 71
+fork: 1464445918.402918 3 0 -2 10 0x15f027320 72 67 
+get: 1464445918.403283 3 0 67 0x1126a9f20 0x1612c78d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445918.403389 3 0 67 0x1126a9eb0 0x1612c78c0 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445918.404487 3 0 -2 10 0x15f027320 72 67 
+fork: 1464445918.404663 3 0 -2 39 0x11e413040 56 67 
+fork: 1464445918.404975 3 0 -2 45 0x11e413040 56 67 
+task: 1464445918.405600 3 72 67 L 1045 word2vec_dsgd.chpl
+task: 1464445918.405621 3 73 67 L 1045 word2vec_dsgd.chpl
+task: 1464445918.405630 3 74 67 L 1045 word2vec_dsgd.chpl
+task: 1464445918.405639 3 75 67 L 1045 word2vec_dsgd.chpl
+Btask: 1464445918.405643 3 73
+Btask: 1464445918.405649 3 74
+Btask: 1464445918.405655 3 75
+Btask: 1464445918.405700 3 72
+Etask: 1464445918.405808 3 73
+Etask: 1464445918.405808 3 74
+Etask: 1464445918.405827 3 75
+Etask: 1464445918.405834 3 72
+fork: 1464445918.405841 3 0 -2 260 0x11e4140c0 88 67 
+fork: 1464445918.502682 3 0 -2 252 0x11e413040 56 67 
+get: 1464445918.503057 3 0 67 0x1126a9b40 0x16154e0b8 1 -1 16 1052 word2vec_dsgd.chpl
+get: 1464445918.503156 3 0 67 0x1126a9f20 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+task: 1464445918.503483 3 76 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445918.503504 3 77 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445918.503510 3 76
+Btask: 1464445918.503522 3 77
+task: 1464445918.503514 3 78 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445918.503544 3 79 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445918.503549 3 78
+Btask: 1464445918.503553 3 79
+Etask: 1464445918.684375 3 78
+Etask: 1464445918.686413 3 77
+Etask: 1464445918.693531 3 76
+Etask: 1464445918.707453 3 79
+task: 1464445918.709417 3 80 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445918.709437 3 81 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445918.709445 3 82 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445918.709453 3 83 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445918.709459 3 83
+Btask: 1464445918.709991 3 81
+Btask: 1464445918.710024 3 82
+Btask: 1464445918.719069 3 80
+Etask: 1464445918.896406 3 82
+Etask: 1464445918.905154 3 81
+Etask: 1464445918.907636 3 80
+Etask: 1464445918.943819 3 83
+fork: 1464445918.943846 3 0 -2 266 0x11e413040 56 67 
+get: 1464445918.972544 3 0 67 0x1126a9ab0 0x10b6165d0 1 -1 16 1054 word2vec_dsgd.chpl
+fork: 1464445918.978582 3 0 -2 276 0x11e413040 64 67 
+task: 1464445918.997414 3 84 67 O 0 <unknown>
+Btask: 1464445918.997522 3 84
+get: 1464445918.997545 3 0 84 0x1161ffef0 0x10b6164f0 1 -1 8 161 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+put: 1464445918.997697 3 0 84 0x1161ffee0 0x108408ef0 1 -1 16 161 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+Etask: 1464445919.009749 3 84
+task: 1464445919.099259 3 85 67 O 0 <unknown>
+Btask: 1464445919.099288 3 85
+Etask: 1464445919.099346 3 85
+task: 1464445919.099735 3 86 1 O 0 <unknown>
+Btask: 1464445919.099752 3 86
+Etask: 1464445919.099809 3 86
+task: 1464445919.099951 3 87 67 O 0 <unknown>
+Btask: 1464445919.099971 3 87
+Etask: 1464445919.100027 3 87
+task: 1464445919.100139 3 88 67 O 0 <unknown>
+Btask: 1464445919.100158 3 88
+put: 1464445919.100165 3 0 88 0x112ea9fb0 0x1084058d0 1 -1 16 982 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.100243 3 0 88 0x112ea9fa0 0x1084058d0 1 -1 16 986 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.100326 3 0 88 0x112ea9f80 0x1084058d0 1 -1 16 988 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.100428 3 0 88 0x112ea9f70 0x1084058d0 1 -1 16 989 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.100547 3 0 88 0x112ea9f60 0x1084058d0 1 -1 16 990 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.100815 3 0 88 0x112ea9f40 0x1084058d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.101781 3 0 88 0x112ea9fd0 0x10b62ee10 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.102347 3 0 88 0x112ea9f20 0x1084058d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.102483 3 0 88 0x112ea9fd0 0x10b62ee10 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.102664 3 0 88 0x112ea9ec0 0x1084058d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.102748 3 0 88 0x112ea9fd0 0x10b62ee38 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.108866 3 0 88 0x112ea9ea0 0x1084058d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.110854 3 0 88 0x112ea9fd0 0x10b62ee38 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.112299 3 0 88 0x112ea9e40 0x1084058d0 1 -1 16 1001 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.113363 3 0 88 0x112ea9e30 0x1084058d0 1 -1 16 1002 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445919.113939 3 0 88 0x112ea9d38 0x10b62ee10 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445919.116848 3 0 88 0x112ea9d30 0x10b62ee18 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445919.119555 3 0 88 0x112ea9d28 0x10b62ee18 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445919.119741 3 0 88 0x112ea9d20 0x10b62ee10 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445919.119887 3 0 88 0x112ea9d38 0x10b62ee38 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445919.120294 3 0 88 0x112ea9d30 0x10b62ee40 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445919.122322 3 0 88 0x112ea9d28 0x10b62ee40 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445919.122652 3 0 88 0x112ea9d20 0x10b62ee38 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+Etask: 1464445919.122846 3 88
+task: 1464445919.123528 3 89 1 O 0 <unknown>
+Btask: 1464445919.123556 3 89
+Etask: 1464445919.123599 3 89
+task: 1464445919.123798 3 90 67 O 0 <unknown>
+Btask: 1464445919.123830 3 90
+Etask: 1464445919.123960 3 90
+task: 1464445919.124268 3 91 67 O 0 <unknown>
+Btask: 1464445919.124296 3 91
+Etask: 1464445919.124339 3 91
+task: 1464445924.583753 3 92 67 O 0 <unknown>
+Btask: 1464445924.583782 3 92
+fork: 1464445924.583799 3 0 -2 129 0x15f027550 72 92 
+Etask: 1464445924.584049 3 92
+task: 1464445924.584276 3 93 1 O 0 <unknown>
+Btask: 1464445924.584293 3 93
+Etask: 1464445924.584354 3 93
+task: 1464445924.584723 3 94 5 O 0 <unknown>
+Btask: 1464445924.584753 3 94
+Etask: 1464445924.584794 3 94
+task: 1464445924.584882 3 95 5 O 0 <unknown>
+Btask: 1464445924.584916 3 95
+Etask: 1464445924.584979 3 95
+task: 1464445924.585047 3 96 67 O 0 <unknown>
+Btask: 1464445924.585070 3 96
+put: 1464445924.585076 3 0 96 0x112ea9fb0 0x1084058d0 1 -1 16 982 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585150 3 0 96 0x112ea9fa0 0x1084058d0 1 -1 16 986 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585231 3 0 96 0x112ea9f80 0x1084058d0 1 -1 16 988 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585321 3 0 96 0x112ea9f70 0x1084058d0 1 -1 16 989 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585402 3 0 96 0x112ea9f60 0x1084058d0 1 -1 16 990 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585505 3 0 96 0x112ea9f40 0x1084058d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585597 3 0 96 0x112ea9fd0 0x10b62f3b0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585682 3 0 96 0x112ea9f20 0x1084058d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585780 3 0 96 0x112ea9fd0 0x10b62f3b0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585863 3 0 96 0x112ea9ec0 0x1084058d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.585942 3 0 96 0x112ea9fd0 0x10b62f3d8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.586030 3 0 96 0x112ea9ea0 0x1084058d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.586114 3 0 96 0x112ea9fd0 0x10b62f3d8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.586198 3 0 96 0x112ea9e40 0x1084058d0 1 -1 16 1001 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.586292 3 0 96 0x112ea9e30 0x1084058d0 1 -1 16 1002 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445924.586375 3 0 96 0x112ea9d38 0x10b62f3b0 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445924.586487 3 0 96 0x112ea9d30 0x10b62f3b8 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445924.586563 3 0 96 0x112ea9d28 0x10b62f3b8 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445924.586639 3 0 96 0x112ea9d20 0x10b62f3b0 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445924.586729 3 0 96 0x112ea9d38 0x10b62f3d8 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445924.586811 3 0 96 0x112ea9d30 0x10b62f3e0 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445924.586883 3 0 96 0x112ea9d28 0x10b62f3e0 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445924.586962 3 0 96 0x112ea9d20 0x10b62f3d8 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+Etask: 1464445924.587079 3 96
+task: 1464445924.587293 3 97 5 O 0 <unknown>
+Btask: 1464445924.587326 3 97
+Etask: 1464445924.587372 3 97
+task: 1464445924.587441 3 98 67 O 0 <unknown>
+Btask: 1464445924.587455 3 98
+Etask: 1464445924.587503 3 98
+task: 1464445924.587581 3 99 67 O 0 <unknown>
+Btask: 1464445924.587594 3 99
+Etask: 1464445924.587663 3 99
+task: 1464445927.223304 3 100 67 O 0 <unknown>
+Btask: 1464445927.223408 3 100
+fork: 1464445927.223417 3 0 -2 129 0x15f027370 72 100 
+Etask: 1464445927.223636 3 100
+get: 1464445927.595016 3 0 67 0x1126a9a80 0x16154e0b8 1 -1 16 1061 word2vec_dsgd.chpl
+get: 1464445927.595102 3 0 67 0x1126a9f20 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445927.595207 3 0 -2 266 0x11e413040 56 67 
+get: 1464445927.595571 3 0 67 0x1126a9a00 0x10b6165d0 1 -1 16 1062 word2vec_dsgd.chpl
+get: 1464445927.595675 3 0 67 0x1126a9470 0x16154e248 1 -1 16 654 word2vec_dsgd.chpl
+get: 1464445927.595740 3 0 67 0x1126a8af0 0x1612c4e60 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445927.595805 3 0 -2 10 0x11e4390a0 72 67 
+get: 1464445927.595962 3 0 67 0x1126a8b50 0x10b62e7d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.596048 3 0 67 0x1126a8b50 0x10b62e7f8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.596134 3 0 67 0x1126a8af0 0x10b62e7c0 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445927.596219 3 0 -2 10 0x11e4390a0 72 67 
+fork: 1464445927.596372 3 0 -2 39 0x11e413040 56 67 
+fork: 1464445927.596568 3 0 -2 141 0x11e4140c0 88 67 
+put: 1464445927.599174 3 0 67 0x1126a8aa0 0x11421c250 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445927.599268 3 0 67 0x1126a8b50 0x11421c250 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445927.599383 3 0 -2 10 0x11e4390a0 72 67 
+fork: 1464445927.599546 3 0 -2 10 0x11e4390a0 72 67 
+fork: 1464445927.599689 3 0 -2 46 0x11e413040 56 67 
+get: 1464445927.607124 3 0 67 0x1126a8b70 0x11421c260 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607206 3 0 67 0x1126a8b68 0x11421c270 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607307 3 0 67 0x1126a8b50 0x11421c260 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607414 3 0 67 0x1126a8b48 0x11421c278 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607488 3 0 67 0x1126a8b40 0x11421c288 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607603 3 0 67 0x1126a8b00 0x11421c260 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607709 3 0 67 0x1126a8ae8 0x11421c288 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607790 3 0 67 0x1126a8ae0 0x11421c280 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.607865 3 0 67 0x1126a8b40 0x11421c260 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445927.607990 3 0 67 0x1126a8ae8 0x11421c280 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.608094 3 0 67 0x1126a8ae0 0x11421c288 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.608189 3 0 67 0x1126a8ad0 0x11421c2c0 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445927.608304 3 0 67 0x18ec00000 0x176a00000 1 -1 114065600 654 word2vec_dsgd.chpl
+get: 1464445928.354341 3 0 67 0x1126a8f50 0x16154e288 1 -1 16 663 word2vec_dsgd.chpl
+get: 1464445928.354487 3 0 67 0x1126a8af0 0x1612c4fe0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445928.354608 3 0 -2 10 0x11e4390a0 72 67 
+get: 1464445928.354784 3 0 67 0x1126a8b50 0x10b62e730 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.354916 3 0 67 0x1126a8b50 0x10b62e758 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.355028 3 0 67 0x1126a8af0 0x10b62e720 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445928.355103 3 0 -2 10 0x11e4390a0 72 67 
+fork: 1464445928.355289 3 0 -2 39 0x11e413040 56 67 
+fork: 1464445928.355533 3 0 -2 141 0x11e4140c0 88 67 
+put: 1464445928.429910 3 0 67 0x1126a8aa0 0x1612c5c90 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445928.429997 3 0 67 0x1126a8b50 0x1612c5c90 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445928.430092 3 0 -2 10 0x11e4390a0 72 67 
+fork: 1464445928.584083 3 0 -2 10 0x11e4390a0 72 67 
+fork: 1464445928.584235 3 0 -2 46 0x11e413040 56 67 
+get: 1464445928.584357 3 0 67 0x1126a8b70 0x1612c5ca0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.584438 3 0 67 0x1126a8b68 0x1612c5cb0 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.584556 3 0 67 0x1126a8b50 0x1612c5ca0 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.584636 3 0 67 0x1126a8b48 0x1612c5cb8 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.584727 3 0 67 0x1126a8b40 0x1612c5cc8 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.584808 3 0 67 0x1126a8b00 0x1612c5ca0 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.584888 3 0 67 0x1126a8ae8 0x1612c5cc8 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.584980 3 0 67 0x1126a8ae0 0x1612c5cc0 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.585066 3 0 67 0x1126a8b40 0x1612c5ca0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445928.585170 3 0 67 0x1126a8ae8 0x1612c5cc0 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.585248 3 0 67 0x1126a8ae0 0x1612c5cc8 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.585346 3 0 67 0x1126a8ad0 0x1612c5d00 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445928.585442 3 0 67 0x18ec00000 0x17da00000 1 -1 114065600 663 word2vec_dsgd.chpl
+fork: 1464445929.043018 3 0 -2 57 0x11e413040 56 67 
+task: 1464445929.056259 3 101 67 O 0 <unknown>
+Btask: 1464445929.056285 3 101
+Etask: 1464445929.056334 3 101
+fork: 1464445929.056489 3 0 -2 57 0x11e413040 56 67 
+task: 1464445929.056658 3 102 5 O 0 <unknown>
+Btask: 1464445929.056689 3 102
+Etask: 1464445929.056744 3 102
+task: 1464445929.136420 3 103 67 L 1039 word2vec_dsgd.chpl
+task: 1464445929.136452 3 104 67 L 1039 word2vec_dsgd.chpl
+Btask: 1464445929.136458 3 103
+Btask: 1464445929.136471 3 104
+task: 1464445929.136461 3 105 67 L 1039 word2vec_dsgd.chpl
+task: 1464445929.136502 3 106 67 L 1039 word2vec_dsgd.chpl
+Btask: 1464445929.136506 3 105
+Btask: 1464445929.136518 3 106
+Etask: 1464445984.263311 3 104
+Etask: 1464445984.827313 3 105
+Etask: 1464445984.857088 3 103
+Etask: 1464445984.893449 3 106
+fork: 1464445984.893477 3 0 -2 10 0x11e4390a0 72 67 
+get: 1464445984.895853 3 0 67 0x1126a9f20 0x1612c78d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445984.898087 3 0 67 0x1126a9eb0 0x1612c78c0 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445984.901311 3 0 -2 10 0x11e4390a0 72 67 
+fork: 1464445984.902209 3 0 -2 39 0x11e413100 56 67 
+fork: 1464445984.904318 3 0 -2 45 0x11e413100 56 67 
+task: 1464445984.908821 3 107 67 L 1045 word2vec_dsgd.chpl
+task: 1464445984.908841 3 108 67 L 1045 word2vec_dsgd.chpl
+Btask: 1464445984.908848 3 107
+Btask: 1464445984.908859 3 108
+Etask: 1464445984.908867 3 107
+Etask: 1464445984.908871 3 108
+task: 1464445984.908850 3 109 67 L 1045 word2vec_dsgd.chpl
+task: 1464445984.908906 3 110 67 L 1045 word2vec_dsgd.chpl
+Btask: 1464445984.908920 3 110
+Etask: 1464445984.908925 3 110
+Btask: 1464445984.908956 3 109
+Etask: 1464445984.908972 3 109
+fork: 1464445984.908978 3 0 -2 260 0x11e414120 88 67 
+fork: 1464445985.314480 3 0 -2 252 0x11e413100 56 67 
+get: 1464445985.320267 3 0 67 0x1126a9b40 0x16154e0b8 1 -1 16 1052 word2vec_dsgd.chpl
+get: 1464445985.324625 3 0 67 0x1126a9f20 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+task: 1464445985.329970 3 111 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445985.329995 3 112 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445985.330005 3 113 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445985.330013 3 114 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445985.330018 3 114
+Btask: 1464445985.330028 3 111
+Btask: 1464445985.330038 3 113
+Btask: 1464445985.330016 3 112
+Etask: 1464445985.480651 3 112
+Etask: 1464445985.485453 3 111
+Etask: 1464445985.496586 3 113
+Etask: 1464445985.524873 3 114
+task: 1464445985.524917 3 115 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445985.524934 3 116 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445985.524943 3 117 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+task: 1464445985.524960 3 118 67 L 3080 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+Btask: 1464445985.524966 3 118
+Btask: 1464445985.525808 3 116
+Btask: 1464445985.530519 3 115
+Btask: 1464445985.530823 3 117
+Etask: 1464445985.742655 3 116
+Etask: 1464445985.749098 3 117
+Etask: 1464445985.750613 3 115
+Etask: 1464445985.796751 3 118
+fork: 1464445985.796788 3 0 -2 266 0x11e413100 56 67 
+get: 1464445985.804266 3 0 67 0x1126a9ab0 0x10b6165d0 1 -1 16 1054 word2vec_dsgd.chpl
+fork: 1464445985.804603 3 0 -2 276 0x11e413100 64 67 
+task: 1464445985.804832 3 119 67 O 0 <unknown>
+Btask: 1464445985.804867 3 119
+get: 1464445985.804879 3 0 119 0x1161ffef0 0x10b6164f0 1 -1 8 161 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+put: 1464445985.804957 3 0 119 0x1161ffee0 0x104400ef0 1 -1 16 161 /Users/brian/scm/chapel/modules/dists/PrivateDist.chpl
+Etask: 1464445985.805065 3 119
+task: 1464445985.932149 3 120 67 O 0 <unknown>
+Btask: 1464445985.932226 3 120
+Etask: 1464445985.932294 3 120
+task: 1464445985.932560 3 121 67 O 0 <unknown>
+Btask: 1464445985.932597 3 121
+Etask: 1464445985.932634 3 121
+task: 1464445985.932720 3 122 1 O 0 <unknown>
+Btask: 1464445985.932756 3 122
+Etask: 1464445985.932775 3 122
+task: 1464445985.932827 3 123 67 O 0 <unknown>
+Btask: 1464445985.932842 3 123
+put: 1464445985.932848 3 0 123 0x112ea9fb0 0x1043fd8d0 1 -1 16 982 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.932913 3 0 123 0x112ea9fa0 0x1043fd8d0 1 -1 16 986 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.932963 3 0 123 0x112ea9f80 0x1043fd8d0 1 -1 16 988 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.933024 3 0 123 0x112ea9f70 0x1043fd8d0 1 -1 16 989 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.933098 3 0 123 0x112ea9f60 0x1043fd8d0 1 -1 16 990 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.933689 3 0 123 0x112ea9f40 0x1043fd8d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.933771 3 0 123 0x112ea9fd0 0x1140312d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.934530 3 0 123 0x112ea9f20 0x1043fd8d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.934651 3 0 123 0x112ea9fd0 0x1140312d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.934761 3 0 123 0x112ea9ec0 0x1043fd8d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.934888 3 0 123 0x112ea9fd0 0x1140312f8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.934970 3 0 123 0x112ea9ea0 0x1043fd8d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.935106 3 0 123 0x112ea9fd0 0x1140312f8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.935193 3 0 123 0x112ea9e40 0x1043fd8d0 1 -1 16 1001 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.937219 3 0 123 0x112ea9e30 0x1043fd8d0 1 -1 16 1002 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445985.937337 3 0 123 0x112ea9d38 0x1140312d0 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445985.937458 3 0 123 0x112ea9d30 0x1140312d8 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445985.937606 3 0 123 0x112ea9d28 0x1140312d8 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445985.937734 3 0 123 0x112ea9d20 0x1140312d0 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445985.937866 3 0 123 0x112ea9d38 0x1140312f8 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445985.937963 3 0 123 0x112ea9d30 0x114031300 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445985.938071 3 0 123 0x112ea9d28 0x114031300 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445985.938164 3 0 123 0x112ea9d20 0x1140312f8 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+Etask: 1464445985.938292 3 123
+task: 1464445985.938978 3 124 67 O 0 <unknown>
+Btask: 1464445985.939013 3 124
+Etask: 1464445985.939045 3 124
+task: 1464445985.939141 3 125 67 O 0 <unknown>
+Btask: 1464445985.939177 3 125
+Etask: 1464445985.939213 3 125
+task: 1464445985.939285 3 126 67 O 0 <unknown>
+Btask: 1464445985.939310 3 126
+Etask: 1464445985.939344 3 126
+task: 1464445987.021720 3 127 67 O 0 <unknown>
+Btask: 1464445987.021770 3 127
+fork: 1464445987.021781 3 0 -2 129 0x11e439140 72 127 
+Etask: 1464445987.030165 3 127
+task: 1464445987.042224 3 128 5 O 0 <unknown>
+Btask: 1464445987.042244 3 128
+Etask: 1464445987.042288 3 128
+task: 1464445987.052761 3 129 67 O 0 <unknown>
+Btask: 1464445987.052798 3 129
+Etask: 1464445987.052888 3 129
+task: 1464445987.062727 3 130 67 O 0 <unknown>
+Btask: 1464445987.062753 3 130
+Etask: 1464445987.062794 3 130
+task: 1464445987.076652 3 131 67 O 0 <unknown>
+Btask: 1464445987.076682 3 131
+put: 1464445987.076691 3 0 131 0x111ea9e70 0x1043fd8d0 1 -1 16 982 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.086789 3 0 131 0x111ea9e60 0x1043fd8d0 1 -1 16 986 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.116974 3 0 131 0x111ea9e40 0x1043fd8d0 1 -1 16 988 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.127046 3 0 131 0x111ea9e30 0x1043fd8d0 1 -1 16 989 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.137159 3 0 131 0x111ea9e20 0x1043fd8d0 1 -1 16 990 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.147276 3 0 131 0x111ea9e00 0x1043fd8d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.157396 3 0 131 0x111ea9e90 0x114031050 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.187517 3 0 131 0x111ea9de0 0x1043fd8d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.187635 3 0 131 0x111ea9e90 0x114031050 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.193410 3 0 131 0x111ea9d80 0x1043fd8d0 1 -1 16 992 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.199549 3 0 131 0x111ea9e90 0x114031078 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.204018 3 0 131 0x111ea9d60 0x1043fd8d0 1 -1 16 996 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.204189 3 0 131 0x111ea9e90 0x114031078 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.204299 3 0 131 0x111ea9d00 0x1043fd8d0 1 -1 16 1001 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.204447 3 0 131 0x111ea9cf0 0x1043fd8d0 1 -1 16 1002 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445987.204535 3 0 131 0x111ea9bf8 0x114031050 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445987.204625 3 0 131 0x111ea9bf0 0x114031058 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445987.204885 3 0 131 0x111ea9be8 0x114031058 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445987.204984 3 0 131 0x111ea9be0 0x114031050 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445987.205092 3 0 131 0x111ea9bf8 0x114031078 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445987.205191 3 0 131 0x111ea9bf0 0x114031080 1 -1 8 338 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445987.206826 3 0 131 0x111ea9be8 0x114031080 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+get: 1464445987.206929 3 0 131 0x111ea9be0 0x114031078 1 -1 8 340 /Users/brian/scm/chapel/modules/internal/ChapelRange.chpl
+Etask: 1464445987.207084 3 131
+task: 1464445987.207289 3 132 1 O 0 <unknown>
+Btask: 1464445987.207309 3 132
+Etask: 1464445987.207356 3 132
+task: 1464445987.207424 3 133 1 O 0 <unknown>
+Btask: 1464445987.207437 3 133
+Etask: 1464445987.207486 3 133
+task: 1464445987.207549 3 134 1 O 0 <unknown>
+Btask: 1464445987.207587 3 134
+Etask: 1464445987.207607 3 134
+task: 1464445990.020703 3 135 67 O 0 <unknown>
+Btask: 1464445990.020734 3 135
+fork: 1464445990.020742 3 0 -2 129 0x11e439140 72 135 
+Etask: 1464445990.020955 3 135
+get: 1464445990.081027 3 0 67 0x1126a9a80 0x16154e0b8 1 -1 16 1061 word2vec_dsgd.chpl
+get: 1464445990.082957 3 0 67 0x1126a9f20 0x10b62e370 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445990.083080 3 0 -2 266 0x11e413100 56 67 
+get: 1464445990.083352 3 0 67 0x1126a9a00 0x10b6165d0 1 -1 16 1062 word2vec_dsgd.chpl
+get: 1464445990.083428 3 0 67 0x1126a9470 0x16154e248 1 -1 16 654 word2vec_dsgd.chpl
+get: 1464445990.083514 3 0 67 0x1126a8af0 0x1612c4e60 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445990.083599 3 0 -2 10 0x10ca57050 72 67 
+get: 1464445990.083743 3 0 67 0x1126a8b50 0x10b62e7d0 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.083847 3 0 67 0x1126a8b50 0x10b62e7f8 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.083929 3 0 67 0x1126a8af0 0x10b62e7c0 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445990.084036 3 0 -2 10 0x10ca57050 72 67 
+fork: 1464445990.311649 3 0 -2 39 0x11e413100 56 67 
+fork: 1464445990.311842 3 0 -2 141 0x11e414120 88 67 
+put: 1464445990.314464 3 0 67 0x1126a8aa0 0x1612c5510 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445990.314538 3 0 67 0x1126a8b50 0x1612c5510 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445990.314650 3 0 -2 10 0x10ca57050 72 67 
+fork: 1464445990.314814 3 0 -2 10 0x10ca57050 72 67 
+fork: 1464445990.314957 3 0 -2 46 0x11e413100 56 67 
+get: 1464445990.315185 3 0 67 0x1126a8b70 0x1612c5520 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315275 3 0 67 0x1126a8b68 0x1612c5530 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315371 3 0 67 0x1126a8b50 0x1612c5520 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315445 3 0 67 0x1126a8b48 0x1612c5538 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315527 3 0 67 0x1126a8b40 0x1612c5548 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315605 3 0 67 0x1126a8b00 0x1612c5520 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315703 3 0 67 0x1126a8ae8 0x1612c5548 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315777 3 0 67 0x1126a8ae0 0x1612c5540 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.315858 3 0 67 0x1126a8b40 0x1612c5520 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445990.315947 3 0 67 0x1126a8ae8 0x1612c5540 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.316012 3 0 67 0x1126a8ae0 0x1612c5548 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.316123 3 0 67 0x1126a8ad0 0x1612c5580 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.316219 3 0 67 0x18ec00000 0x176a00000 1 -1 114065600 654 word2vec_dsgd.chpl
+get: 1464445990.953572 3 0 67 0x1126a8f50 0x16154e288 1 -1 16 663 word2vec_dsgd.chpl
+get: 1464445990.953682 3 0 67 0x1126a8af0 0x1612c4fe0 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445990.953770 3 0 -2 10 0x10ca57050 72 67 
+get: 1464445990.953951 3 0 67 0x1126a8b50 0x10b62e730 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.954055 3 0 67 0x1126a8b50 0x10b62e758 1 -1 40 477 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445990.954140 3 0 67 0x1126a8af0 0x10b62e720 1 -1 16 584 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+fork: 1464445990.954215 3 0 -2 10 0x10ca57050 72 67 
+fork: 1464445990.954370 3 0 -2 39 0x11e413100 56 67 
+fork: 1464445990.991875 3 0 -2 141 0x11e414120 88 67 
+put: 1464445991.237655 3 0 67 0x1126a8aa0 0x1612c5450 1 -1 16 1859 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445991.237721 3 0 67 0x1126a8b50 0x1612c5450 1 -1 16 1863 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+fork: 1464445991.237805 3 0 -2 10 0x10ca57050 72 67 
+fork: 1464445991.237979 3 0 -2 10 0x10ca57050 72 67 
+fork: 1464445991.238141 3 0 -2 46 0x11e413100 56 67 
+get: 1464445993.443451 3 0 67 0x1126a8b70 0x1612c5460 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.443561 3 0 67 0x1126a8b68 0x1612c5470 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.443663 3 0 67 0x1126a8b50 0x1612c5460 1 -1 16 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.443743 3 0 67 0x1126a8b48 0x1612c5478 1 -1 8 1329 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.443833 3 0 67 0x1126a8b40 0x1612c5488 1 -1 8 1331 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.443926 3 0 67 0x1126a8b00 0x1612c5460 1 -1 16 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.444034 3 0 67 0x1126a8ae8 0x1612c5488 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.444127 3 0 67 0x1126a8ae0 0x1612c5480 1 -1 8 1334 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.444206 3 0 67 0x1126a8b40 0x1612c5460 1 -1 16 1732 /Users/brian/scm/chapel/modules/internal/ChapelArray.chpl
+get: 1464445993.444283 3 0 67 0x1126a8ae8 0x1612c5480 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.444357 3 0 67 0x1126a8ae0 0x1612c5488 1 -1 8 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.444430 3 0 67 0x1126a8ad0 0x1612c54c0 1 -1 16 1389 /Users/brian/scm/chapel/modules/internal/DefaultRectangular.chpl
+get: 1464445993.444518 3 0 67 0x18ec00000 0x17da00000 1 -1 114065600 663 word2vec_dsgd.chpl
+fork: 1464445994.037038 3 0 -2 57 0x11e413100 56 67 
+task: 1464445994.037207 3 136 5 O 0 <unknown>
+Btask: 1464445994.037227 3 136
+Etask: 1464445994.037286 3 136
+fork: 1464445994.037435 3 0 -2 57 0x11e413100 56 67 
+task: 1464445994.037647 3 137 1 O 0 <unknown>
+Btask: 1464445994.037675 3 137
+Etask: 1464445994.037720 3 137
+fork: 1464445994.114612 3 0 -2 14 0x10ca57050 72 67 
+Etask: 1464445994.114896 3 67
+task: 1464445996.767414 3 138 1 O 0 <unknown>
+Btask: 1464445996.767434 3 138
+Etask: 1464445996.768927 3 138
+task: 1464446002.591066 3 139 1 O 0 <unknown>
+Btask: 1464446002.591090 3 139
+VdbMark: 1464446002.591099 3 139
+End: 1464446002.591107 281.273441 40.699820 3 139
