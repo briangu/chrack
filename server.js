@@ -6,21 +6,22 @@ var ws = require("nodejs-websocket");
 var fs = require("fs");
 var path = require('path');
 
+var currentWatcher = [];
+var currentFilesize = [];
+var eventData = {};
+var maxCount = 0;
+var localeCount = 0;
+
 http.createServer(function (req, res) {
 	fs.createReadStream("index.html").pipe(res)
 }).listen(8080)
 
 var server = ws.createServer(function (connection) {
-	connection.nickname = null
 	connection.on("text", function (str) {
-		if (connection.nickname === null) {
-			connection.nickname = str
-			broadcast(str+" entered")
-		} else
-			broadcast("["+connection.nickname+"] "+str)
+		broadcastLatestEventData();
 	})
 	connection.on("close", function () {
-		broadcast(connection.nickname+" left")
+		console.log("closing");
 	})
 })
 server.listen(8081)
@@ -31,58 +32,118 @@ function broadcast(str) {
 	})
 }
 
-var currentWatcher;
-var currentFilesize = 0;
+function broadcastLatestEventData() {
+	var clientData =
+		{
+			maxCount: maxCount,
+			eventData: eventData
+		};
+	console.log("clientData: ", clientData);
+	broadcast(JSON.stringify(clientData));
+}
 
-function startWatching(filename) {
-	currentWatcher = fs.watch(filename, function(event){
-		fs.stat(filename, function(err,stat){
-      // console.log("stat!", stat.size);
-			if(err) {
-				console.log(err);
-				return;
+function addEvent(eventObj) {
+	console.log("addEvent: ", eventObj);
+	if (eventData[eventObj.src_node_id] === undefined) eventData[eventObj.src_node_id] = {};
+	if (eventData[eventObj.src_node_id][eventObj.dest_node_id] == undefined) eventData[eventObj.src_node_id][eventObj.dest_node_id] = { count: 0, events: [] };
+
+	var intersection = eventData[eventObj.src_node_id][eventObj.dest_node_id];
+	intersection.count += 1;
+	intersection.events.push(eventObj);
+	if (maxCount < intersection.count) {
+		maxCount = intersection.count;
+	}
+}
+
+// function startWatching(filename, localeId) {
+// 	currentWatcher[localeId] = fs.watch(filename, function(event) {
+// 		var watcherIndex = localeId;
+// 		fs.stat(filename, function(err,stat){
+// 			if(err) {
+// 				console.log(err);
+// 				return;
+// 			}
+// 			if(currentFilesize[watcherIndex] > stat.size) {
+// 				currentFilesize[watcherIndex] = stat.size;
+// 				return;
+// 			}
+//       // console.log("reading ", stat.size);
+// 			var stream = fs.createReadStream(filename, { start: currentFilesize[watcherIndex], end: stat.size});
+// 			stream.addListener("error",function(err){
+//         console.log(err);
+// 			});
+// 			stream.addListener("data", function(filedata) {
+// 				var addedCount = 0;
+// 				var lines = filedata.toString('utf-8').split("\n");
+// 				console.log("lines");
+//         lines.forEach(function(line) {
+// 					console.log(line);
+//           if (line.startsWith('get:')) {
+//             var parts = line.split(' ');
+//             var obj = {
+//               time: parts[1],
+//               src_node_id: parts[2],
+//               dest_node_id: parts[3],
+//               line_no: parts[10],
+//               filename: parts[11]
+//             };
+//            // allow filename to be empty
+//            //  (typeof(obj.filename) === "string" && obj.filename.length > 0)
+//             if (!isNaN(obj.time) &&
+//                 !isNaN(obj.src_node_id) &&
+//                 !isNaN(obj.dest_node_id) &&
+//                 !isNaN(obj.line_no)) {
+// 							addEvent(obj);
+// 							addedCount += 1;
+//             } else {
+//               console.log("DROPPING: ", line);
+//             }
+//           }
+//         });
+//
+// 				console.log(maxCount);
+// 				console.log(eventData);
+//
+//         if (addedCount > 0) {
+//           broadcast(JSON.stringify(eventData));
+//         }
+//
+// 				currentFilesize[watcherIndex] = stat.size;
+// 			});
+// 		});
+// 	});
+// }
+
+function loadFile(filename) {
+	console.log("loading file ", filename);
+	var addedCount = 0;
+	fs.readFileSync(filename, 'utf8').split("\n").forEach(function(line) {
+		console.log(line);
+		if (line.startsWith('get:')) {
+			var parts = line.split(' ');
+			var obj = {
+				time: parts[1],
+				src_node_id: parts[2],
+				dest_node_id: parts[3],
+				line_no: parts[10],
+				filename: parts[11]
+			};
+		 // allow filename to be empty
+		 //  (typeof(obj.filename) === "string" && obj.filename.length > 0)
+			if (!isNaN(obj.time) &&
+					!isNaN(obj.src_node_id) &&
+					!isNaN(obj.dest_node_id) &&
+					!isNaN(obj.line_no)) {
+				addEvent(obj);
+				addedCount += 1;
+			} else {
+				console.log("DROPPING: ", line);
 			}
-			if(currentFilesize > stat.size) {
-				currentFilesize = stat.size;
-				return;
-			}
-      // console.log("reading ", stat.size);
-			var stream = fs.createReadStream(filename, { start: currentFilesize, end: stat.size});
-			stream.addListener("error",function(err){
-        console.log(err);
-			});
-			stream.addListener("data", function(filedata) {
-        var clientData = [];
-        var lines = filedata.toString('utf-8').split("\n");
-        lines.forEach(function(line) {
-          if (line.startsWith('get:')) {
-            var parts = line.split(' ');
-            var obj = {
-              time: parts[1],
-              src_node_id: parts[2],
-              dest_node_id: parts[3],
-              line_no: parts[10],
-              filename: parts[11]
-            };
-           // allow filename to be empty
-           //  (typeof(obj.filename) === "string" && obj.filename.length > 0)
-            if (!isNaN(obj.time) &&
-                !isNaN(obj.src_node_id) &&
-                !isNaN(obj.dest_node_id) &&
-                !isNaN(obj.line_no)) {
-              clientData.push(obj);
-            } else {
-              console.log("DROPPING: ", line);
-            }
-          }
-        });
-        if (clientData.length > 0) {
-          broadcast(JSON.stringify(clientData));
-        }
-				currentFilesize = stat.size;
-			});
-		});
+		}
 	});
+	console.log(addedCount);
+	console.log(maxCount);
+	console.log(eventData);
 }
 
 // var spawn = require('child_process').spawn;
@@ -93,9 +154,12 @@ function startWatching(filename) {
 var watchDir = process.argv[2] || ".";
 console.log("watching directory: ", watchDir);
 
-
 fs.readdirSync(watchDir).forEach(function(filename) {
   var filePath = path.join(watchDir, filename);
   console.log("watching file: ", filePath);
-  startWatching(filePath);
+  // startWatching(filePath, localeCount);
+	// localeCount += 1;
+	loadFile(filePath);
 });
+console.log(maxCount);
+console.log(eventData);

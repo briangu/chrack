@@ -91,34 +91,6 @@ var countDimension = ndx.dimension(function (d) {
     return d.count;
 });
 
-var nasdaqTable = dc.dataTable('.dc-data-table');
-nasdaqTable /* dc.dataTable('.dc-data-table', 'chartGroup') */
-  .dimension(countDimension)
-  // Data table does not use crossfilter group but rather a closure
-  // as a grouping function
-  .group(function (d) {
-     var format = d3.format('02d');
-     return format((d.count);
-  })
-  // (_optional_) max number of records to be shown, `default = 25`
-  // .size(10)
-  // There are several ways to specify the columns; see the data-table documentation.
-  // This code demonstrates generating the column header automatically based on the columns.
-  .columns([
-     'count',
-     'line_no',
-     'filename'
-  ])
-  // (_optional_) sort using the given field, `default = function(d){return d;}`
-  .sortBy(function (d) {
-     return d.count;
-  })
-  // (_optional_) sort order, `default = d3.ascending`
-  .order(d3.descending)
-  // (_optional_) custom renderlet to post-process chart using [D3](http://d3js.org)
-  );
-
-
 var periodicUpdater = function() {
   ndx.add(transformCountsToChartData());
   dc.redrawAll();
@@ -129,6 +101,7 @@ window.addEventListener("load", function () {
 	connection = new WebSocket("ws://"+window.location.hostname+":8081")
 	connection.onopen = function () {
 		console.log("Connection opened")
+    connection.send("hello")
 	}
 	connection.onclose = function () {
 		console.log("Connection closed")
@@ -138,13 +111,20 @@ window.addEventListener("load", function () {
 	}
 	connection.onmessage = function (event) {
     var clientData = JSON.parse(event.data);
-    clientData.forEach(function(row) {
-      var intersection = data[row.src_node_id][row.dest_node_id];
-      intersection.count += 1;
-      intersection.events.push(row);
-      if (maxCount < intersection.count) {
-        maxCount = intersection.count;
-      }
+    console.log(clientData);
+    Object.keys(clientData.eventData).forEach(function(src_node_id) {
+      Object.keys(clientData.eventData[src_node_id]).forEach(function(dest_node_id){
+        console.log(src_node_id, " ", dest_node_id);
+        var wedge = clientData.eventData[src_node_id][dest_node_id];
+        var intersection = data[src_node_id][dest_node_id];
+        intersection.count += wedge.count;
+        wedge.events.forEach(function(row) {
+          intersection.events.push(row);
+        });
+        if (maxCount < intersection.count) {
+          maxCount = intersection.count;
+        }
+      })
     })
 	}
 
