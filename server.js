@@ -39,7 +39,7 @@ function broadcastLatestEventData(filename) {
 			maxCount: maxCount,
 			eventData: eventData,
 			sourceFile: {
-				"word2vec_dsgd.chpl": sourceFileContents
+				filename: sourceFileContents
 			}
 		};
 	// console.log("clientData: ", clientData);
