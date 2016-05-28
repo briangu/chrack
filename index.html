@@ -20,6 +20,7 @@
   <div class=".dc-data-table" id="event-table"></div>
 
 <script>
+var needUpdate = true;
 var maxCount = 0;
 var data = {
   0: {
@@ -92,8 +93,10 @@ var countDimension = ndx.dimension(function (d) {
 });
 
 var periodicUpdater = function() {
+  if (!needUpdate) return;
   ndx.add(transformCountsToChartData());
   dc.redrawAll();
+  needUpdate = false;
 }
 
 var connection
@@ -124,12 +127,43 @@ window.addEventListener("load", function () {
         if (maxCount < intersection.count) {
           maxCount = intersection.count;
         }
-      })
+      });
     })
+    needUpdate = true;
 	}
 
   window.setInterval(periodicUpdater, 2000);
 })
+
+chart.on('filtered.selected', function(chart, filter) {
+  console.log("selected: ", filter);
+  // console.log(data[]);
+  console.log(filter[0], filter[1]);
+  var src_node_id = filter[0];
+  var dest_node_id = filter[1];
+  var intersection = data[src_node_id][dest_node_id];
+  console.log(intersection.count);
+  // console.log(intersection.events);
+  var unique_line_no = {};
+  intersection.events.forEach(function(row) {
+    if (row.filename === "word2vec_dsgd.chpl") {
+      if (unique_line_no[row.line_no] === undefined) {
+        // console.log(row.line_no, row.filename);
+        unique_line_no[row.line_no] = 0;
+      }
+      unique_line_no[row.line_no] += 1;
+    }
+  });
+  console.log(unique_line_no);
+});
+
+// chart.on('filtered.unselected', function(chart, filter) {
+//   console.log("unselected: ", filter);
+// });
+// chart.on(".selected", function(x) {
+//   console.log(x);
+// });
+
 </script>
 </body>
 </html>
