@@ -8,11 +8,25 @@
     <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/d3.js"></script>
     <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/crossfilter.js"></script>
     <script type="text/javascript" src="http://dc-js.github.io/dc.js/js/dc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
     <style>
          .heat-box {
            stroke: #E6E6E6;
            stroke-width: 2px;
          }
+         .ace-related-code-highlight {
+           background-color: blue;
+           position:absolute;
+         }
+    </style>
+    <style>
+    #editor {
+        /** Setting height is also important, otherwise editor wont showup**/
+        height: 100%;
+        position: absolute;
+        top: 300px;
+        width: 100%;
+    }
     </style>
 </head>
 <body>
@@ -21,7 +35,17 @@
   <div>
     <table id="codeTable"></table>
   </div>
+  <div id="editor"></div>
 
+<script>
+var editor = ace.edit("editor");
+var markers = [];
+
+editor.setTheme("ace/theme/monokai");
+editor.getSession().setMode("ace/mode/c_cpp");
+editor.$blockScrolling = Infinity;
+editor.setReadOnly(true);
+</script>
 
 <script>
 var expectedFilename = "word2vec_dsgd.chpl";
@@ -125,6 +149,8 @@ window.addEventListener("load", function () {
     // TODO: consume the filenames automatically and activiely filter the log data by this
     // expectedFilename = "word2vec_dsgd.chpl";
     sourceFileContents = clientData.sourceFile[expectedFilename];
+    editor.session.setValue(sourceFileContents);
+
     Object.keys(clientData.eventData).forEach(function(src_node_id) {
       Object.keys(clientData.eventData[src_node_id]).forEach(function(dest_node_id){
         console.log(src_node_id, " ", dest_node_id);
@@ -145,9 +171,17 @@ window.addEventListener("load", function () {
   window.setInterval(periodicUpdater, 2000);
 })
 
+function resetEditor() {
+  markers.forEach(function(markerId) {
+    editor.getSession().removeMarker(markerId);
+  });
+  markers = [];
+}
+
 chart.on('filtered.selected', function(chart, filter) {
   var table = document.getElementById("codeTable");
   table.innerHTML = "";
+  resetEditor();
   if (selection !== null) {
     selection = null;
     return;
@@ -173,6 +207,11 @@ chart.on('filtered.selected', function(chart, filter) {
   });
   console.log(selection);
 
+  // http://stackoverflow.com/questions/26037443/ace-editor-load-new-content-dynamically-clear-old-content-with-new-one
+  // editor.session.setValue(sourceFileContents);
+
+  markers = [];
+  var aceRange = ace.require('ace/range').Range;
   Object.keys(selection[expectedFilename]).forEach(function(line_no) {
     var row = table.insertRow(-1);
     var cell1 = row.insertCell(0);
@@ -181,15 +220,11 @@ chart.on('filtered.selected', function(chart, filter) {
     cell1.innerHTML = selection[expectedFilename][line_no];
     cell2.innerHTML = line_no;
     cell3.innerHTML = expectedFilename;
+    var range = new aceRange(+line_no-1, 0, +line_no, 0);
+    var markerId = editor.getSession().addMarker(range, "ace-related-code-highlight", "line", false);
+    markers.push(markerId);
   });
 });
-
-// chart.on('filtered.unselected', function(chart, filter) {
-//   console.log("unselected: ", filter);
-// });
-// chart.on(".selected", function(x) {
-//   console.log(x);
-// });
 
 </script>
 </body>
