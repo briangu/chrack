@@ -20,3 +20,7 @@ For the time being, we support only looking at one file in the UI.  You can spec
 via the expectedFilename parameter.
 
 Then open a browser to localhost:8080
+
+## Thanks
+
+Thanks to @ben-albrecht for his ACE editor contributions.
